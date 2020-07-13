@@ -5,7 +5,7 @@ def maximalSquare(matrix) -> int:
     col = len(matrix[0])
     edge_len = 1
     # construct a matrix for dp (1 extrafor edge handling)
-    dp_matrix = [[0]*(col+1)]*(row+1)
+    dp_matrix = [[0 for n in range(col+1)] for m in range(row+1)]
     i, j = 1, 1
     while i < row+1:
         j = 1
